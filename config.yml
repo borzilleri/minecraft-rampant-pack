@@ -1,0 +1,5 @@
+version: "4.0-beta2"
+package_base_name: 'rampant-pack'
+server:
+  host: "nerv.local"
+  dir: "/Volumes/Ryoji/Minecraft/rampant-pack"
