@@ -1,0 +1,22 @@
+{
+    "yellorite": {
+        "template": "uniform",
+        "block": {"name": "BigReactors:YelloriteOre", "metadata": 0},
+				"material": "minecraft:stone",
+        "clusterSize": 10,
+        "numClusters": 5,
+        "minHeight": 5,
+        "maxHeight": 45,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1,
+						7
+        ]
+    }
+}
