@@ -1,12 +1,12 @@
 {
-    "yellorite": {
+    "salt": {
         "template": "uniform",
-        "block": {"name": "BigReactors:YelloriteOre", "metadata": 0},
+        "block": {"name": "harvestcraft:salt"},
 				"material": "minecraft:stone",
-        "clusterSize": 10,
-        "numClusters": 5,
-        "minHeight": 5,
-        "maxHeight": 45,
+        "clusterSize": 12,
+        "numClusters": 12,
+        "minHeight": 0,
+        "maxHeight": 128,
         "retrogen": "true",
         "biomeRestriction": "none",
         "biomes": [
@@ -14,9 +14,9 @@
         ],
         "dimensionRestriction": "blacklist",
         "dimensions": [
+            -100,
             -1,
-            1,
-						7
+            1
         ]
     }
 }

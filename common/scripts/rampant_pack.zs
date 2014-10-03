@@ -12,11 +12,12 @@ recipes.addShaped(<harvestcraft:potItem>, [
 	[null, <ore:ingotCopper>, <ore:ingotCopper>],
 	[null, null, null]
 ]);
+<harvestcraft:potItem>.displayName = "Copper Pot";
 
 # Clay Water Bucket -> Fresh Water
 recipes.addShapeless(<harvestcraft:freshwaterItem>*4, [<IguanaTweaksTConstruct:clayBucketWater>]);
 
-# Wheat Seed = Any Seed + Mortar & Pestle
+# Wheat Seed = Any 2 Seeds + Mortar & Pestle
 recipes.addShapeless(<minecraft:wheat_seeds>, [<ore:toolMortarandpestle>, <ore:listAllseed>, <ore:listAllseed>]);
 
 # Attempt to Consolidate Bronze Recipes
@@ -133,22 +134,13 @@ recipes.remove(<Metallurgy:crusher>);
 recipes.remove(<Metallurgy:alloyer>);
 recipes.remove(<Metallurgy:forge>);
 
-# Add Bitumen -> Glue recipe.
-furnace.addRecipe(<TConstruct:materials:36>, <Metallurgy:utility.item:4>, 0.25);
-
 # Phosphorus pulverizer recipe
 mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1>*2);
 
-# Fertilizer Recipes
-# Fertilizer*8 =
-# Phosphorus + Magnesium + Saltpeter
-recipes.addShapeless(<MineFactoryReloaded:item.mfr.fertilizer>*8, [<ore:dustPhosphorus>, <ore:dustMagnesium>, <ore:dustSaltpeter>]);
-# Phosphorus + Magnesium + Potash
-recipes.addShapeless(<MineFactoryReloaded:item.mfr.fertilizer>*8, [<ore:dustPhosphorus>, <ore:dustMagnesium>, <ore:dustPotash>]);
-# Phosphorus + Saltpeter + Potash
-recipes.addShapeless(<MineFactoryReloaded:item.mfr.fertilizer>*8, [<ore:dustPhosphorus>, <ore:dustSaltpeter>, <ore:dustPotash>]);
-# = Saltpeter + Magnesium + Potash
-recipes.addShapeless(<MineFactoryReloaded:item.mfr.fertilizer>*8, [<ore:dustSaltpeter>, <ore:dustMagnesium>, <ore:dustPotash>]);
+# Add Metallurgy fertilizer to fertilizer oredict entry.
+<ore:fertilizerOrganic>.add(<Metallurgy:fertilizer>);
+# Remove super cheap gunpowder recipe (probably from fertilizer)
+recipes.remove(<minecraft:gunpowder>*4);
 
 # Flint And Steel = Magnesium + Flint
 recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:dustMagnesium>, <ore:ingotIron>]);
@@ -158,11 +150,11 @@ oreSalt.add(<harvestcraft:salt>);
 oreSalt.remove(<harvestcraft:saltItem>);
 # Remove Salt -> Salt*2 Recipe (WTF was this?)
 mods.thermalexpansion.Pulverizer.removeRecipe(<harvestcraft:saltItem>);
-# Add Salt Ore -> Salt*2 Recipe (w/50% chance for an extra salt)
+# Pulverizer Add Salt Ore -> Salt*2 Recipe (w/50% chance for an extra salt)
 mods.thermalexpansion.Pulverizer.addRecipe(2400, <harvestcraft:salt>, <harvestcraft:saltItem>*2, <harvestcraft:saltItem>, 50);
 
 # Add Crafting Recipe for Bucket of Brine + Pot = 4 Salt
-recipes.remove(<harvestcraft:saltItem>);
+#recipes.remove(<harvestcraft:saltItem>);
 recipes.addShapeless(<harvestcraft:saltItem>*4, [<harvestcraft:potItem>, <Mekanism:BrineBucket>]);
 
 ##
@@ -238,4 +230,3 @@ recipes.addShaped(<minecraft:spawn_egg:3>, [
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:soul_charm>,<HardcoreEnderExpansion:essence>],
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
 ]);
-
