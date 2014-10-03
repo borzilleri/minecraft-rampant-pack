@@ -1,3 +1,7 @@
+# Combine Botania & HarvestCraft mortar & pestle oredict entries
+<ore:toolMortarandpestle>.addAll(<ore:pestleAndMortar>);
+<ore:pestleAndMortar>.mirror(<ore:toolMortarandpestle>);
+
 # Remove Natura Stew
 recipes.remove(<Natura:natura.stewbowl>);
 
@@ -8,8 +12,12 @@ recipes.addShaped(<harvestcraft:potItem>, [
 	[null, <ore:ingotCopper>, <ore:ingotCopper>],
 	[null, null, null]
 ]);
-<harvestcraft:potItem>.displayName = "Copper Pot"
 
+# Clay Water Bucket -> Fresh Water
+recipes.addShapeless(<harvestcraft:freshwaterItem>*4, [<IguanaTweaksTConstruct:clayBucketWater>]);
+
+# Wheat Seed = Any Seed + Mortar & Pestle
+recipes.addShapeless(<minecraft:wheat_seeds>, [<ore:toolMortarandpestle>, <ore:listAllseed>, <ore:listAllseed>]);
 
 # Attempt to Consolidate Bronze Recipes
 furnace.remove(<Metallurgy:bronze.ingot>);
@@ -127,7 +135,6 @@ recipes.remove(<Metallurgy:forge>);
 
 # Add Bitumen -> Glue recipe.
 furnace.addRecipe(<TConstruct:materials:36>, <Metallurgy:utility.item:4>, 0.25);
-furnace.addRecipe(<TConstruct:materials:36>, <primitivemobs:primitivemobs_TarBall>, 0.25);
 
 # Phosphorus pulverizer recipe
 mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1>*2);
@@ -231,3 +238,4 @@ recipes.addShaped(<minecraft:spawn_egg:3>, [
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:soul_charm>,<HardcoreEnderExpansion:essence>],
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
 ]);
+
