@@ -139,8 +139,6 @@ mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Me
 
 # Add Metallurgy fertilizer to fertilizer oredict entry.
 <ore:fertilizerOrganic>.add(<Metallurgy:fertilizer>);
-# Remove super cheap gunpowder recipe (probably from fertilizer)
-recipes.remove(<minecraft:gunpowder>*4);
 
 # Flint And Steel = Magnesium + Flint
 recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:dustMagnesium>, <ore:ingotIron>]);
