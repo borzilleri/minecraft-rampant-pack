@@ -122,6 +122,15 @@ mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:adamantine.ingot>, <Me
 # Desichalkos = Eximite Meutoite
 mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:ender.dust:0>, <Metallurgy:ender.dust:1>, <Metallurgy:desichalkos.ingot>*2);
 mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:eximite.ingot>, <Metallurgy:meutoite.ingot>, <Metallurgy:desichalkos.ingot>*2);
+#
+# Aluminum Brass = Aluminum*3 + Copper
+mods.thermalexpansion.Smelter.addRecipe(2400, <TConstruct:materials:11>*3, <ThermalFoundation:material:64>, <TConstruct:materials:14>*4);
+mods.thermalexpansion.Smelter.addRecipe(2400, <TConstruct:materials:40>*3, <ThermalFoundation:material:32>, <TConstruct:materials:14>*4);#
+#
+#
+# Brass = Copper + Zinc
+mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:64>, <Metallurgy:zinc.ingot>, <Metallurgy:brass.ingot>*2);
+mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:32>, <Metallurgy:precious.dust>, <Metallurgy:brass.ingot>*2);
 ##
 
 # Add Fluid Transposer Recipe for Glowstone Ingot
@@ -217,7 +226,7 @@ recipes.addShaped(<Railcraft:tile.railcraft.machine.alpha>, [
 recipes.remove(<Railcraft:tile.railcraft.machine.alpha:2>);
 recipes.addShaped(<Railcraft:tile.railcraft.machine.alpha:2>, [
 	[<ore:ingotSilver>,<minecraft:wool:15>,<ore:ingotSilver>],
-	[<minecraft:diamond>, <minecraft:ender_pearl>, <minecraft:diamond>],
+	[<ore:gemDiamond>, <minecraft:ender_pearl>, <ore:gemDiamond>],
 	[<ore:ingotSilver>,<minecraft:wool:15>,<ore:ingotSilver>]
 ]);
 
@@ -228,3 +237,27 @@ recipes.addShaped(<minecraft:spawn_egg:3>, [
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:soul_charm>,<HardcoreEnderExpansion:essence>],
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
 ]);
+
+recipes.addShaped(<ThermalExpansion:Frame>, [
+	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>],
+	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
+	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>]	
+]);
+
+recipes.addShaped(<ThermalExpansion:Frame>, [
+	[<ore:ingotBlackSteel>, <ore:blockGlass>, <ore:ingotBlackSteel>],
+	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
+	[<ore:ingotBlackSteel>, <ore:blockGlass>, <ore:ingotBlackSteel>]	
+]);
+
+recipes.addShaped(<ThermalExpansion:Frame>, [
+	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>],
+	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
+	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>]	
+]);
+
+mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy:base.dust:7>);
+mods.mekanism.Purification.addRecipe(<Metallurgy:shadow.steel.ingot>, <Metallurgy:base.dust:7>);
+
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:black.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:shadow.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
