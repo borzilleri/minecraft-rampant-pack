@@ -131,7 +131,6 @@ mods.thermalexpansion.Smelter.addRecipe(2400, <TConstruct:materials:40>*3, <Ther
 # Brass = Copper + Zinc
 mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:64>, <Metallurgy:zinc.ingot>, <Metallurgy:brass.ingot>*2);
 mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:32>, <Metallurgy:precious.dust>, <Metallurgy:brass.ingot>*2);
-##
 
 # Add Fluid Transposer Recipe for Glowstone Ingot
 # Glowstone Ingot = 4kRF + Osmium + Energized Glowstone
@@ -238,23 +237,51 @@ recipes.addShaped(<minecraft:spawn_egg:3>, [
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
 ]);
 
+# Machine Frame w/ Brass
 recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
 	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>]	
 ]);
 
+# Machine Frame w/ Prometheium
 recipes.addShaped(<ThermalExpansion:Frame>, [
-	[<ore:ingotBlackSteel>, <ore:blockGlass>, <ore:ingotBlackSteel>],
+	[<ore:ingotPrometheum>, <ore:blockGlass>, <ore:ingotPrometheum>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
-	[<ore:ingotBlackSteel>, <ore:blockGlass>, <ore:ingotBlackSteel>]	
+	[<ore:ingotPrometheum>, <ore:blockGlass>, <ore:ingotPrometheum>]	
 ]);
 
+# Machine Frame w/ Shadow Steel
 recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
 	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>]	
 ]);
+
+# Pneumatic Servo w/Brass
+recipes.addShaped(<ThermalExpansion:material>, [
+	[null, <ore:ingotBrass>, null],
+	[<ore:blockGlass>, <ore:dustRedstone>, <ore:blockGlass>],
+	[null, <ore:ingotBrass>, null]	
+]);
+
+# Pneumatic Servo w/Promethum
+recipes.addShaped(<ThermalExpansion:material>, [
+	[null, <ore:ingotPrometheum>, null],
+	[<ore:blockGlass>, <ore:dustRedstone>, <ore:blockGlass>],
+	[null, <ore:ingotPrometheum>, null]
+]);
+
+# Pneumatic Servo w/Shadow Steel
+recipes.addShaped(<ThermalExpansion:material>, [
+	[null, <ore:ingotShadowSteel>, null],
+	[<ore:blockGlass>, <ore:dustRedstone>, <ore:blockGlass>],
+	[null, <ore:ingotShadowSteel>, null]
+]);
+
+# Infuscolium + Other Dust -> ??
+# Lemurite + Other Dust -> ??
+# Astral Silver Dust + Other Dust -> Silver Dust
 
 mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy:base.dust:7>);
 mods.mekanism.Purification.addRecipe(<Metallurgy:shadow.steel.ingot>, <Metallurgy:base.dust:7>);
