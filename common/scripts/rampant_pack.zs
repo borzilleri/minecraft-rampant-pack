@@ -241,28 +241,28 @@ recipes.addShaped(<minecraft:spawn_egg:3>, [
 recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
-	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>]	
+	[<ore:ingotBrass>, <ore:blockGlass>, <ore:ingotBrass>]
 ]);
 
 # Machine Frame w/ Prometheium
 recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotPrometheum>, <ore:blockGlass>, <ore:ingotPrometheum>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
-	[<ore:ingotPrometheum>, <ore:blockGlass>, <ore:ingotPrometheum>]	
+	[<ore:ingotPrometheum>, <ore:blockGlass>, <ore:ingotPrometheum>]
 ]);
 
 # Machine Frame w/ Shadow Steel
 recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>],
 	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
-	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>]	
+	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>]
 ]);
 
 # Pneumatic Servo w/Brass
 recipes.addShaped(<ThermalExpansion:material>, [
 	[null, <ore:ingotBrass>, null],
 	[<ore:blockGlass>, <ore:dustRedstone>, <ore:blockGlass>],
-	[null, <ore:ingotBrass>, null]	
+	[null, <ore:ingotBrass>, null]
 ]);
 
 # Pneumatic Servo w/Promethum
@@ -288,3 +288,8 @@ mods.mekanism.Purification.addRecipe(<Metallurgy:shadow.steel.ingot>, <Metallurg
 
 mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:black.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
 mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:shadow.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
+
+#furnace.setFuel(<ore:ingotIgnatius>, 4800);
+#furnace.setFuel(<ore:blockIgnatius>, 48000);
+#furnace.setFuel(<ore:ingotVulanite>, 9600);
+#furnace.setFuel(<ore:blockVulcanite>, 96000);
