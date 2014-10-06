@@ -171,7 +171,7 @@
 		]
 	},
 	"astralSilver": {
-		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 4},
+		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 5},
 		"template": "uniform",
 		"clusterSize": 8,
 		"numClusters": 10,
@@ -189,7 +189,7 @@
 		]
 	},
 	"carmot": {
-		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 4},
+		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 6},
 		"template": "uniform",
 		"clusterSize": 8,
 		"numClusters": 10,
@@ -207,7 +207,7 @@
 		]
 	},
 	"mithril": {
-		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 4},
+		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 7},
 		"template": "uniform",
 		"clusterSize": 8,
 		"numClusters": 10,
@@ -225,7 +225,7 @@
 		]
 	},
 	"rubracium": {
-		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 4},
+		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 8},
 		"template": "uniform",
 		"clusterSize": 8,
 		"numClusters": 10,
@@ -243,7 +243,7 @@
 		]
 	},
 	"orichalcum": {
-		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 4},
+		"block": {"name": "Metallurgy:fantasy.ore", "metadata": 11},
 		"template": "uniform",
 		"clusterSize": 8,
 		"numClusters": 3,
