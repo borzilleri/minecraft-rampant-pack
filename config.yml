@@ -1,5 +1,22 @@
-version: "4.0.1"
-package_base_name: 'rampant-pack'
-server:
-  host: "nerv.local"
-  dir: "/Volumes/Ryoji/Minecraft/rampant-pack"
+package_name: 'rampant-pack'
+version: '4.0.2'
+
+packages:
+  server:
+    builder: "vanilla"
+    directories:
+      - common
+      - server
+    host: "nerv.local"
+    dir: "/Volumes/Ryoji/Minecraft/rampant-pack"
+
+  vanilla:
+    builder: "vanilla"
+    directories: &CLIENT_DIRS
+      - common
+      - client
+
+  technic:
+    builder: "technic"
+    directories:
+      <<: *CLIENT_DIRS

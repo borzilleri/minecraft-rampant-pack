@@ -1,5 +1,30 @@
 # Rampant Pack Changelog
 
+### Version 4.0.2
+
+* **Recipe Changes:**
+	* Railcraft rails can now be made out of many new materials, look up the recipes!
+	* Infuscolium and Lemurite can be turned into Iron in a Blast Furnace
+	* Ignatius and Vulcanite can be used as fuel in a Furnace (or anything that accepts furnace fuel)
+	* Aluminum can be used to make Pneumatic Servos and Machine Frames
+	* Lumium & Signalium can be made with some fanatasy/nether dusts
+
+* **Config Changes:**
+	* Enabled recipes for Invar Tools, so you can properly craft MFR machines.
+	* Reduced the XP Cost and item cost of crafting a book of absorbtion.
+
+* **Updated Mods:**
+	* Botania
+	* Minetweaker
+	* Another One Bites the Dust
+	* Enhanced Portals 3
+	* Spice of Life
+	* Big Reactors
+
+* **Mods Added/Removed:**
+	* Opis removed.
+	* JourneyMap added.
+
 ### Version 4.0.1
 
 * **Recipe Changes**:
