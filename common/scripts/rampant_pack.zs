@@ -258,6 +258,13 @@ recipes.addShaped(<ThermalExpansion:Frame>, [
 	[<ore:ingotShadowSteel>, <ore:blockGlass>, <ore:ingotShadowSteel>]
 ]);
 
+# Machine Frame w/ Aluminum
+recipes.addShaped(<ThermalExpansion:Frame>, [
+	[<ore:ingotAluminum>, <ore:blockGlass>, <ore:ingotAluminum>],
+	[<ore:blockGlass>, <ore:gearTin>, <ore:blockGlass>],
+	[<ore:ingotAluminum>, <ore:blockGlass>, <ore:ingotAluminum>]
+]);
+
 # Pneumatic Servo w/Brass
 recipes.addShaped(<ThermalExpansion:material>, [
 	[null, <ore:ingotBrass>, null],
@@ -279,17 +286,191 @@ recipes.addShaped(<ThermalExpansion:material>, [
 	[null, <ore:ingotShadowSteel>, null]
 ]);
 
-# Infuscolium + Other Dust -> ??
-# Lemurite + Other Dust -> ??
-# Astral Silver Dust + Other Dust -> Silver Dust
+# Pneumatic Servo w/ Aluminum
+recipes.addShaped(<ThermalExpansion:material>, [
+	[null, <ore:ingotAluminum>, null],
+	[<ore:blockGlass>, <ore:dustRedstone>, <ore:blockGlass>],
+	[null, <ore:ingotAluminum>, null]
+]);
 
+
+# Black Steel/Shadow Steel in Purification Chamber -> Steel Dust
 mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy:base.dust:7>);
 mods.mekanism.Purification.addRecipe(<Metallurgy:shadow.steel.ingot>, <Metallurgy:base.dust:7>);
 
+# Black Steel/Shadow Steel in a Blast Furnace -> Steel Ingot
 mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:black.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
 mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:shadow.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
 
-#furnace.setFuel(<ore:ingotIgnatius>, 4800);
-#furnace.setFuel(<ore:blockIgnatius>, 48000);
-#furnace.setFuel(<ore:ingotVulanite>, 9600);
-#furnace.setFuel(<ore:blockVulcanite>, 96000);
+# Infuscolium/Lemurite in a Blast Furnace -> Iron Ingot
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:infuscolium.ingot>, false, false, 260, <minecraft:iron_ingot>);
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:lemurite.ingot>, false, false, 260, <minecraft:iron_ingot>);
+
+# One Ignatius Ingot can smelt 32 items in a furnace.
+furnace.setFuel(<ore:ingotIgnatius>, 6400);
+# Vulcanite is 4x as good as Ignatius (128 items)
+furnace.setFuel(<ore:ingotVulanite>, 25600);
+# Blocks can smelt 10x an ingot (320 items and 1280 items, respectively)
+furnace.setFuel(<ore:blockIgnatius>, 64000);
+furnace.setFuel(<ore:blockVulcanite>, 256000);
+
+# Standard Rail Recipes
+# Prometheum
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*4, [
+	[<Metallurgy:prometheum.ingot>, null, <Metallurgy:prometheum.ingot>],
+	[<Metallurgy:prometheum.ingot>, null, <Metallurgy:prometheum.ingot>],
+	[<Metallurgy:prometheum.ingot>, null, <Metallurgy:prometheum.ingot>]
+]);
+# Copper
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*4, [
+	[<ThermalFoundation:material:64>, null, <ThermalFoundation:material:64>],
+	[<ThermalFoundation:material:64>, null, <ThermalFoundation:material:64>],
+	[<ThermalFoundation:material:64>, null, <ThermalFoundation:material:64>]
+]);
+# Shadow Iron
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*12, [
+	[<Metallurgy:shadow.iron.ingot>, null, <Metallurgy:shadow.iron.ingot>],
+	[<Metallurgy:shadow.iron.ingot>, null, <Metallurgy:shadow.iron.ingot>],
+	[<Metallurgy:shadow.iron.ingot>, null, <Metallurgy:shadow.iron.ingot>]
+]);
+# Pig Iron
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*12, [
+	[<TConstruct:materials:34>, null, <TConstruct:materials:34>],
+	[<TConstruct:materials:34>, null, <TConstruct:materials:34>],
+	[<TConstruct:materials:34>, null, <TConstruct:materials:34>]
+]);
+
+# Advanced Rail Recipes
+# Silver
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*4, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:66>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:66>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:66>]
+]);
+# Mithril
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*14, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:mithril.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:mithril.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:mithril.ingot>]
+]);
+# Mana-Infused
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*14, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:70>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:70>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:70>]
+]);
+# Platinum
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*12, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:platinum.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:platinum.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:platinum.ingot>]
+]);
+# Shiny
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*14, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:69>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:69>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <ThermalFoundation:material:69>]
+]);
+# Hepatizon
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1>*10, [
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:hepatizon.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:hepatizon.ingot>],
+	[<Railcraft:part.rail>, <minecraft:redstone>, <Metallurgy:hepatizon.ingot>]
+]);
+
+
+# Reinforced Rail Recipes
+# Black Steel
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*4, [
+	[<Metallurgy:black.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:black.steel.ingot>],
+	[<Metallurgy:black.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:black.steel.ingot>],
+	[<Metallurgy:black.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:black.steel.ingot>]
+]);
+# Shadow Steel
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*8, [
+	[<Metallurgy:shadow.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:shadow.steel.ingot>],
+	[<Metallurgy:shadow.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:shadow.steel.ingot>],
+	[<Metallurgy:shadow.steel.ingot>, <ThermalFoundation:material:4>, <Metallurgy:shadow.steel.ingot>]
+]);
+# Invar
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*6, [
+	[<ThermalFoundation:material:72>, <ThermalFoundation:material:4>, <ThermalFoundation:material:72>],
+	[<ThermalFoundation:material:72>, <ThermalFoundation:material:4>, <ThermalFoundation:material:72>],
+	[<ThermalFoundation:material:72>, <ThermalFoundation:material:4>, <ThermalFoundation:material:72>]
+]);
+# Kalendrite
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*14, [
+	[<Metallurgy:kalendrite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:kalendrite.ingot>],
+	[<Metallurgy:kalendrite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:kalendrite.ingot>],
+	[<Metallurgy:kalendrite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:kalendrite.ingot>]
+]);
+# Inolashite
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*12, [
+	[<Metallurgy:inolashite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:inolashite.ingot>],
+	[<Metallurgy:inolashite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:inolashite.ingot>],
+	[<Metallurgy:inolashite.ingot>, <ThermalFoundation:material:4>, <Metallurgy:inolashite.ingot>]
+]);
+# Rubracium
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:4>*10, [
+	[<Metallurgy:rubracium.ingot>, <ThermalFoundation:material:4>, <Metallurgy:rubracium.ingot>],
+	[<Metallurgy:rubracium.ingot>, <ThermalFoundation:material:4>, <Metallurgy:rubracium.ingot>],
+	[<Metallurgy:rubracium.ingot>, <ThermalFoundation:material:4>, <Metallurgy:rubracium.ingot>]
+]);
+
+# Electric Rail Recipes
+# Brass
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:5>*4, [
+	[<Railcraft:part.rail>, <Metallurgy:brass.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:brass.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:brass.ingot>, <Railcraft:part.rail>]
+]);
+# Oureclase
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:5>*4, [
+	[<Railcraft:part.rail>, <Metallurgy:oureclase.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:oureclase.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:oureclase.ingot>, <Railcraft:part.rail>]
+]);
+# Electrum
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:5>*8, [
+	[<Railcraft:part.rail>, <ThermalFoundation:material:71>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <ThermalFoundation:material:71>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <ThermalFoundation:material:71>, <Railcraft:part.rail>]
+]);
+# Carmot
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:5>*8, [
+	[<Railcraft:part.rail>, <Metallurgy:carmot.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:carmot.ingot>, <Railcraft:part.rail>],
+	[<Railcraft:part.rail>, <Metallurgy:carmot.ingot>, <Railcraft:part.rail>]
+]);
+
+# H.S. Rail Recipes
+# Steel + Astral Silver
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*10, [
+	[<Railcraft:ingot>, <minecraft:blaze_powder>, <Metallurgy:astral.silver.ingot>],
+	[<Railcraft:ingot>, <minecraft:blaze_powder>, <Metallurgy:astral.silver.ingot>],
+	[<Railcraft:ingot>, <minecraft:blaze_powder>, <Metallurgy:astral.silver.ingot>]
+]);
+# Amordrine + Celenegil
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*16, [
+	[<Metallurgy:amordrine.ingot>, <minecraft:blaze_powder>, <Metallurgy:celenegil.ingot>],
+	[<Metallurgy:amordrine.ingot>, <minecraft:blaze_powder>, <Metallurgy:celenegil.ingot>],
+	[<Metallurgy:amordrine.ingot>, <minecraft:blaze_powder>, <Metallurgy:celenegil.ingot>]
+]);
+# Black steel + Carmot
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*8, [
+	[<Metallurgy:black.steel.ingot>, <minecraft:blaze_powder>, <Metallurgy:carmot.ingot>],
+	[<Metallurgy:black.steel.ingot>, <minecraft:blaze_powder>, <Metallurgy:carmot.ingot>],
+	[<Metallurgy:black.steel.ingot>, <minecraft:blaze_powder>, <Metallurgy:carmot.ingot>]
+]);
+# Brass + Silver
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*4, [
+	[<Metallurgy:brass.ingot>, <minecraft:blaze_powder>, <ThermalFoundation:material:66>],
+	[<Metallurgy:brass.ingot>, <minecraft:blaze_powder>, <ThermalFoundation:material:66>],
+	[<Metallurgy:brass.ingot>, <minecraft:blaze_powder>, <ThermalFoundation:material:66>]
+]);
+# Ceruclase + Quicksilver
+mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*12, [
+	[<Metallurgy:ceruclase.ingot>, <minecraft:blaze_powder>, <Metallurgy:quicksilver.ingot>],
+	[<Metallurgy:ceruclase.ingot>, <minecraft:blaze_powder>, <Metallurgy:quicksilver.ingot>],
+	[<Metallurgy:ceruclase.ingot>, <minecraft:blaze_powder>, <Metallurgy:quicksilver.ingot>]
+]);
