@@ -293,6 +293,15 @@ recipes.addShaped(<ThermalExpansion:material>, [
 	[null, <ore:ingotAluminum>, null]
 ]);
 
+# Lumium = Prometheum + Astral SIlver
+recipes.addShapeless(<ThermalFoundation:material:42>*4,
+	[<ore:dustPrometheum>, <ore:dustPrometheum>, <ore:dustPrometheum>,
+	<ore:dustAstralSilver>, <ThermalFoundation:bucket>]);
+
+# Lumium = Lemurite + Astral Silver
+recipes.addShapeless(<ThermalFoundation:material:43>*4,
+	[<ore:dustLemurite>, <ore:dustLemurite>, <ore:dustLemurite>,
+	<ore:dustAstralSilver>, <ThermalFoundation:bucket:1>]);
 
 # Black Steel/Shadow Steel in Purification Chamber -> Steel Dust
 mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy:base.dust:7>);
