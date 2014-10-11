@@ -1,7 +1,7 @@
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:0.35211268
 saturation:0.0
 renderDistance:12
 guiScale:2
@@ -115,20 +115,28 @@ key_invtweaks.key.sort:19
 key_Mekanism Mode Switch:36
 key_Mekanism Voice:0
 key_key.fart.desc:0
-key_key.mw_open_gui:50
-key_key.mw_new_marker:52
-key_key.mw_next_map_mode:26
-key_key.mw_next_marker_group:27
-key_key.mw_teleport:51
-key_key.mw_zoom_in:13
-key_key.mw_zoom_out:12
+key_key.mw_open_gui:0
+key_key.mw_new_marker:0
+key_key.mw_next_map_mode:0
+key_key.mw_next_marker_group:0
+key_key.mw_teleport:0
+key_key.mw_zoom_in:0
+key_key.mw_zoom_out:0
 key_key.mw_underground_mode:0
 key_key.primitivemobs.desc:38
+key_TG.keybind.openInv:71
 key_key.control:65
 key_railcraft.keybind.loco.faster:78
 key_railcraft.keybind.loco.slower:74
 key_railcraft.keybind.loco.mode:55
 key_railcraft.keybind.loco.whistle:0
+key_key.journeymap.hotkeys_toggle:50
+key_key.journeymap.zoom_in:13
+key_key.journeymap.zoom_out:12
+key_key.journeymap.day:26
+key_key.journeymap.night:27
+key_key.journeymap.minimap_position:0
+key_key.journeymap.create_waypoint:52
 soundCategory_master:0.50993377
 soundCategory_music:0.3802817
 soundCategory_record:1.0
