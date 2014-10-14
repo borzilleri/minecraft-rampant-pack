@@ -1,5 +1,21 @@
 # Rampant Pack Changelog
 
+### Version 4.0.3
+
+* **Recipe Changes:**
+	* Anvils can now be crafted with Oureclase, Carmot, and Alduorite.
+	* Hoppers can now be crafted with Aluminum and Oureclase.
+	* End Stone can no longer be crafted.
+	* Mekanism Enriched Alloy can now be created with Oureclase.
+	* Midasium and Astral Silver can now be alloyed in an Induction Smelter to create Electrum
+	* Prometheum and Carmot can be turned to Enriched Alloy in an Enrichment Chamber.
+
+* **Config Changes:**
+	* Buildcraft Power (MJ) is no longer blacklisted by Mekanism.
+
+* **Updated Mods:**
+	* Hardcore Ender Expansion
+
 ### Version 4.0.2
 
 * **Recipe Changes:**
