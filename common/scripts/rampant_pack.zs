@@ -181,7 +181,7 @@ mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:midasium.ingot>, <Meta
 mods.thermalexpansion.Transposer.addFillRecipe(4000, <Mekanism:Ingot:1>, <Mekanism:Ingot:3>, <liquid:glowstone>*250);
 
 # Remove End Stone crafting
-mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:sandstone>, <liquid:ender>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:sandstone>, <liquid:ender>);
 
 # Remove Metallurgy machines.
 recipes.remove(<Metallurgy:machine.frame>);
