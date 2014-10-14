@@ -8,12 +8,14 @@
 	* End Stone can no longer be crafted.
 	* Mekanism Enriched Alloy can now be created with Oureclase.
 	* Midasium and Astral Silver can now be alloyed in an Induction Smelter to create Electrum
-	* Prometheum and Carmot can be turned to Enriched Alloy in an Enrichment Chamber.
+	* Prometheum and Carmot can be turned to Enriched Alloy in a Metallurgic Infuser
 
 * **Config Changes:**
 	* Buildcraft Power (MJ) is no longer blacklisted by Mekanism.
 
 * **Updated Mods:**
+	* Blood Magic
+	* Extra Utilities (1.2.0 pre-release!)
 	* Hardcore Ender Expansion
 
 ### Version 4.0.2

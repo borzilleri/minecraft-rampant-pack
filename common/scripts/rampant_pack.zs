@@ -28,19 +28,19 @@ furnace.addRecipe(<TConstruct:materials:13>, <Metallurgy:base.dust:3>, 0.25);
 
 # Add alternate anvil recipes.
 recipes.addShaped(<minecraft:anvil>, [
-	[<Metallurgy:fantasy.block:4>, <Metallurgy:Metallurgy:fantasy.block:4>, <Metallurgy:fantasy.block:4>],
+	[<Metallurgy:fantasy.block:4>, <Metallurgy:fantasy.block:4>, <Metallurgy:fantasy.block:4>],
 	[null, <Metallurgy:oureclase.ingot>, null],
 	[<Metallurgy:oureclase.ingot>,<Metallurgy:oureclase.ingot>,<Metallurgy:oureclase.ingot>]
 ]);
 
 recipes.addShaped(<minecraft:anvil>, [
-	[<Metallurgy:fantasy.block:6>, <Metallurgy:Metallurgy:fantasy.block:6>, <Metallurgy:fantasy.block:6>],
+	[<Metallurgy:fantasy.block:6>, <Metallurgy:fantasy.block:6>, <Metallurgy:fantasy.block:6>],
 	[null, <Metallurgy:carmot.ingot>, null],
 	[<Metallurgy:carmot.ingot>,<Metallurgy:carmot.ingot>,<Metallurgy:carmot.ingot>]
 ]);
 
 recipes.addShaped(<minecraft:anvil>, [
-	[<Metallurgy:nether.block:6>, <Metallurgy:Metallurgy:nether.block:6>, <Metallurgy:nether.block:6>],
+	[<Metallurgy:nether.block:6>, <Metallurgy:nether.block:6>, <Metallurgy:nether.block:6>],
 	[null, <Metallurgy:alduorite.ingot>, null],
 	[<Metallurgy:alduorite.ingot>,<Metallurgy:alduorite.ingot>,<Metallurgy:alduorite.ingot>]
 ]);
@@ -97,12 +97,12 @@ recipes.remove(<ore:dustManyullyn>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:EnrichedIron>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:Ingot:4>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:Dust:5>);
-mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:prometheum.ingot>, <Mekanism:EnrichedIron>);
-mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:carmot.ingot>, <Mekanism:EnrichedIron>);
 
 ##
 # Add additional Infuser Recipes
-mods.mekanism.Infuser.addRecie("REDSTONE", 20, <Metallurgy:oureclase.ingot>, <Mekanism:EnrichedAlloy>);
+mods.mekanism.Infuser.addRecipe("REDSTONE", 20, <Metallurgy:oureclase.ingot>, <Mekanism:EnrichedAlloy>);
+mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:prometheum.ingot>, <Mekanism:EnrichedIron>);
+mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:carmot.ingot>, <Mekanism:EnrichedIron>);
 
 ##
 # Add Induction Smelter Recipes for Alloys
