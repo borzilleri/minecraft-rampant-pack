@@ -17,12 +17,47 @@ recipes.addShaped(<harvestcraft:potItem>, [
 # Clay Water Bucket -> Fresh Water
 recipes.addShapeless(<harvestcraft:freshwaterItem>*4, [<IguanaTweaksTConstruct:clayBucketWater>]);
 
+
 # Wheat Seed = Any 2 Seeds + Mortar & Pestle
 recipes.addShapeless(<minecraft:wheat_seeds>, [<ore:toolMortarandpestle>, <ore:listAllseed>, <ore:listAllseed>]);
 
 # Attempt to Consolidate Bronze Recipes
 furnace.remove(<Metallurgy:bronze.ingot>);
 furnace.addRecipe(<TConstruct:materials:13>, <Metallurgy:base.dust:3>, 0.25);
+
+
+# Add alternate anvil recipes.
+recipes.addShaped(<minecraft:anvil>, [
+	[<Metallurgy:fantasy.block:4>, <Metallurgy:Metallurgy:fantasy.block:4>, <Metallurgy:fantasy.block:4>],
+	[null, <Metallurgy:oureclase.ingot>, null],
+	[<Metallurgy:oureclase.ingot>,<Metallurgy:oureclase.ingot>,<Metallurgy:oureclase.ingot>]
+]);
+
+recipes.addShaped(<minecraft:anvil>, [
+	[<Metallurgy:fantasy.block:6>, <Metallurgy:Metallurgy:fantasy.block:6>, <Metallurgy:fantasy.block:6>],
+	[null, <Metallurgy:carmot.ingot>, null],
+	[<Metallurgy:carmot.ingot>,<Metallurgy:carmot.ingot>,<Metallurgy:carmot.ingot>]
+]);
+
+recipes.addShaped(<minecraft:anvil>, [
+	[<Metallurgy:nether.block:6>, <Metallurgy:Metallurgy:nether.block:6>, <Metallurgy:nether.block:6>],
+	[null, <Metallurgy:alduorite.ingot>, null],
+	[<Metallurgy:alduorite.ingot>,<Metallurgy:alduorite.ingot>,<Metallurgy:alduorite.ingot>]
+]);
+
+# Add Alternate Hopper Recipes
+# Aluminum
+recipes.addShaped(<minecraft:hopper>, [
+	[<ore:ingotAluminum>, null, <ore:ingotAluminum>],
+	[<ore:ingotAluminum>, <minecraft:chest>, <ore:ingotAluminum>],
+	[null, <ore:ingotAluminum>, null]
+]);
+# Oureclase
+recipes.addShaped(<minecraft:hopper>, [
+	[<ore:ingotOureclase>, null, <ore:ingotOureclase>],
+	[<ore:ingotOureclase>, <minecraft:chest>, <ore:ingotOureclase>],
+	[null, <ore:ingotOureclase>, null]
+]);
 
 ##
 # Remove Shapeless Recipes for Alloy Dusts.
@@ -62,7 +97,12 @@ recipes.remove(<ore:dustManyullyn>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:EnrichedIron>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:Ingot:4>);
 mods.mekanism.Infuser.removeRecipe(<Mekanism:Dust:5>);
+mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:prometheum.ingot>, <Mekanism:EnrichedIron>);
+mods.mekanism.Infuser.addRecipe("CARBON", 100, <Metallurgy:carmot.ingot>, <Mekanism:EnrichedIron>);
+
 ##
+# Add additional Infuser Recipes
+mods.mekanism.Infuser.addRecie("REDSTONE", 20, <Metallurgy:oureclase.ingot>, <Mekanism:EnrichedAlloy>);
 
 ##
 # Add Induction Smelter Recipes for Alloys
@@ -127,14 +167,21 @@ mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:eximite.ingot>, <Metal
 mods.thermalexpansion.Smelter.addRecipe(2400, <TConstruct:materials:11>*3, <ThermalFoundation:material:64>, <TConstruct:materials:14>*4);
 mods.thermalexpansion.Smelter.addRecipe(2400, <TConstruct:materials:40>*3, <ThermalFoundation:material:32>, <TConstruct:materials:14>*4);#
 #
-#
 # Brass = Copper + Zinc
 mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:64>, <Metallurgy:zinc.ingot>, <Metallurgy:brass.ingot>*2);
 mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:32>, <Metallurgy:precious.dust>, <Metallurgy:brass.ingot>*2);
+#
+# Electrum = Midasium + Astral Silver
+mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:nether.dust:3>, <Metallurgy:fantasy.dust:5>, <ThermalExpansion:material:71>*2);
+mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:midasium.ingot>, <Metallurgy:astral.silver.ingot>, <ThermalExpansion:material:71>*2);
+
 
 # Add Fluid Transposer Recipe for Glowstone Ingot
 # Glowstone Ingot = 4kRF + Osmium + Energized Glowstone
 mods.thermalexpansion.Transposer.addFillRecipe(4000, <Mekanism:Ingot:1>, <Mekanism:Ingot:3>, <liquid:glowstone>*250);
+
+# Remove End Stone crafting
+mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:sandstone>, <liquid:ender>);
 
 # Remove Metallurgy machines.
 recipes.remove(<Metallurgy:machine.frame>);
@@ -308,8 +355,8 @@ mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy
 mods.mekanism.Purification.addRecipe(<Metallurgy:shadow.steel.ingot>, <Metallurgy:base.dust:7>);
 
 # Black Steel/Shadow Steel in a Blast Furnace -> Steel Ingot
-mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:black.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
-mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:shadow.steel.ingot>, false, false, 260, <Mekanism:Ingot:4>);
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:black.steel.ingot>, false, false, 260, <Railcraft:ingot>);
+mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:shadow.steel.ingot>, false, false, 260, <Railcraft:ingot>);
 
 # Infuscolium/Lemurite in a Blast Furnace -> Iron Ingot
 mods.railcraft.BlastFurnace.addRecipe(<Metallurgy:infuscolium.ingot>, false, false, 260, <minecraft:iron_ingot>);
