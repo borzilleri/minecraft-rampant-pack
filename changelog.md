@@ -1,5 +1,18 @@
 # Rampant Pack Changelog
 
+### Version 4.0.4
+
+* **Updated Mods:**
+	* Botania
+	* ItemSearch
+	* ModTweaker
+	* Morpheus
+	* PneumatiCraft
+	* ProjectRed
+
+* **Removed Mods:**
+	* Hamsterrific: Causing a recipe conflict, and seemed non-functional.
+
 ### Version 4.0.3
 
 * **Recipe Changes:**
@@ -9,6 +22,7 @@
 	* Mekanism Enriched Alloy can now be created with Oureclase.
 	* Midasium and Astral Silver can now be alloyed in an Induction Smelter to create Electrum
 	* Prometheum and Carmot can be turned to Enriched Alloy in a Metallurgic Infuser
+	* Enable Invar Sword Recipe
 
 * **Config Changes:**
 	* Buildcraft Power (MJ) is no longer blacklisted by Mekanism.
