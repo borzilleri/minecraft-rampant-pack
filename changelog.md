@@ -1,5 +1,16 @@
 # Rampant Pack Changelog
 
+### Version 4.0.4a
+
+* **Recipe Changes:**
+	* Changed Tesseract Frame & Ender Dragon Spawn egg recipes.
+
+* **Config Changes:**
+	* Added some tools to the Bibliocraft tool rack.
+
+* **Mods Added:**
+	* TabulaRasa - used for above recipe changes.
+
 ### Version 4.0.4
 
 * **Config Changes:**

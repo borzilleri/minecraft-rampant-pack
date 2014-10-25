@@ -256,7 +256,7 @@ recipes.addShaped(<RefinedRelocation:playerRelocator>, [
 recipes.remove(<ThermalExpansion:Frame:7>);
 recipes.addShaped(<ThermalExpansion:Frame:7>, [
 	[<ThermalFoundation:material:76>,<ThermalExpansion:Glass>,<ThermalFoundation:material:76>],
-	[<ThermalExpansion:Glass>,<HardcoreEnderExpansion:essence>,<ThermalExpansion:Glass>],
+	[<ThermalExpansion:Glass>,<TabulaRasa:RasaItem0>,<ThermalExpansion:Glass>],
 	[<ThermalFoundation:material:76>,<ThermalExpansion:Glass>,<ThermalFoundation:material:76>]
 ]);
 
@@ -279,9 +279,9 @@ recipes.addShaped(<Railcraft:tile.railcraft.machine.alpha:2>, [
 # HardcoreEnderExpansion:corporeal_mirage_orb
 # Ender Dragon Spawn Egg
 recipes.addShaped(<minecraft:spawn_egg:3>, [
-	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>],
-	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:soul_charm>,<HardcoreEnderExpansion:essence>],
-	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
+	[<TabulaRasa:RasaItem0>,<TabulaRasa:RasaItem0>,<TabulaRasa:RasaItem0>],
+	[<TabulaRasa:RasaItem0>,<HardcoreEnderExpansion:soul_charm>,<TabulaRasa:RasaItem0>],
+	[<TabulaRasa:RasaItem0>,<TabulaRasa:RasaItem0>,<TabulaRasa:RasaItem0>]
 ]);
 
 # Machine Frame w/ Brass
@@ -349,6 +349,13 @@ recipes.addShapeless(<ThermalFoundation:material:42>*4,
 recipes.addShapeless(<ThermalFoundation:material:43>*4,
 	[<ore:dustLemurite>, <ore:dustLemurite>, <ore:dustLemurite>,
 	<ore:dustAstralSilver>, <ThermalFoundation:bucket:1>]);
+	
+# Condensed Dragon Essence
+recipes.addShaped(<TabulaRasa:RasaItem0>, [
+	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>],
+	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>],
+	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>]
+]);
 
 # Black Steel/Shadow Steel in Purification Chamber -> Steel Dust
 mods.mekanism.Purification.addRecipe(<Metallurgy:black.steel.ingot>, <Metallurgy:base.dust:7>);
