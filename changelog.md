@@ -2,6 +2,9 @@
 
 ### Version 4.0.4
 
+* **Config Changes:**
+	* Chisel Blocks added to Forge Multipart
+
 * **Updated Mods:**
 	* Botania
 	* Hunger Overhaul
