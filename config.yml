@@ -18,5 +18,5 @@ packages:
 
   technic:
     builder: "technic"
-    directories:
-      <<: *CLIENT_DIRS
+    forge_version: "1.7.10-10.13.2.1230"
+    directories: *CLIENT_DIRS

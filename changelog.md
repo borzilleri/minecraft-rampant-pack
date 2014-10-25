@@ -4,11 +4,14 @@
 
 * **Updated Mods:**
 	* Botania
+	* Hunger Overhaul
 	* ItemSearch
+	* Metallurgy
 	* ModTweaker
 	* Morpheus
 	* PneumatiCraft
 	* ProjectRed
+	* SpecialMobs
 
 * **Removed Mods:**
 	* Hamsterrific: Causing a recipe conflict, and seemed non-functional.
