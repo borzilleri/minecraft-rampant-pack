@@ -537,3 +537,105 @@ mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3>*12, [
 	[<Metallurgy:ceruclase.ingot>, <minecraft:blaze_powder>, <Metallurgy:quicksilver.ingot>],
 	[<Metallurgy:ceruclase.ingot>, <minecraft:blaze_powder>, <Metallurgy:quicksilver.ingot>]
 ]);
+
+
+# MFR Mining Laser Changes
+# Remove Atalarus Entirely
+mods.mfr.MiningLaser.removeOre(<ore:oreAtlarus>);
+
+# 0: WHITE (No changes)
+<MineFactoryReloaded:item.mfr.laserfocus>.addTooltip("Aluminum, Quartz, Niter, Zinc");
+
+# 1: ORANGE
+<MineFactoryReloaded:item.mfr.laserfocus:1>.addTooltip("Ardite, Copper, Oureclase");
+mods.mfr.MiningLaser.addPreferredOre(1, <ore:oreOureclase>);
+
+# 2: MAGENTA
+<MineFactoryReloaded:item.mfr.laserfocus:2>.addTooltip("Adamantine, Infuscolium, Sanguinite");
+mods.mfr.MiningLaser.addPreferredOre(2, <ore:oreInfuscolium>);
+mods.mfr.MiningLaser.addPreferredOre(2, <ore:oreAdamantine>);
+mods.mfr.MiningLaser.addPreferredOre(14, <ore:oreSanguinite>);
+
+# 3: LIGHT BLUE
+<MineFactoryReloaded:item.mfr.laserfocus:3>.addTooltip("Ceruclase, Diamond, Platinum");
+mods.mfr.MiningLaser.removePreferredOre(3, <ore:oreOsmium>);
+mods.mfr.MiningLaser.addPreferredOre(3, <ore:oreCeruclase>);
+
+# 4: YELLOW
+<MineFactoryReloaded:item.mfr.laserfocus:4>.addTooltip("Gold, Glowstone, Midasium, Sulfur");
+mods.mfr.MiningLaser.removePreferredOre(4, <ore:oreYellorite>);
+mods.mfr.MiningLaser.addPreferredOre(4, <ore:oreMidasium>);
+
+# 5: LIME
+<MineFactoryReloaded:item.mfr.laserfocus:5>.addTooltip("Emerald, Prometheum, Vyroxeres");
+mods.mfr.MiningLaser.addPreferredOre(5, <ore:orePrometheum>);
+mods.mfr.MiningLaser.addPreferredOre(5, <ore:oreVyroxeres>);
+
+# 6: PINK
+<MineFactoryReloaded:item.mfr.laserfocus:6>.addTooltip("Ignatius, Manganese, Vulcanite");
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreMeutoite>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreEximite>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:Atlarus>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreOrichalcum>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreRubracium>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreCarmot>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreAstralSilver>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreOureclase>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreInfuscolium>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreDeepIron>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:orePrometheum>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreSanguinite>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreKalendrite>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreCeruclase>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreVyroxeres>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreMidasium>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreLemurite>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreShadowIron>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:orePotash>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:oreBitumen>);
+mods.mfr.MiningLaser.removePreferredOre(6, <ore:orePhosphorite>);
+
+# 7 GRAY
+<MineFactoryReloaded:item.mfr.laserfocus:7>.addTooltip("Astral Silver, Carmot, Silver");
+mods.mfr.MiningLaser.addPreferredOre(7, <ore:oreCarmot>);
+mods.mfr.MiningLaser.addPreferredOre(7, <ore:oreAstralSilver>);
+
+# 8: LIGHT GRAY (no changes)
+<MineFactoryReloaded:item.mfr.laserfocus:8>.addTooltip("Magnesium, Nickel, Tin");
+
+# 9: CYAN
+<MineFactoryReloaded:item.mfr.laserfocus:9>.addTooltip("Alduorite, Certus Quartz, Lemurite, Mithril");
+mods.mfr.MiningLaser.addPreferredOre(9, <ore:oreAlduorite>);
+mods.mfr.MiningLaser.addPreferredOre(9, <ore:oreLemurite>);
+mods.mfr.MiningLaser.addPreferredOre(9, <ore:oreMithril>);
+
+# 10: PURPLE
+<MineFactoryReloaded:item.mfr.laserfocus:10>.addTooltip("Eximite, Kalendrite, Lead");
+mods.mfr.MiningLaser.addPreferredOre(10, <ore:oreEximite>);
+mods.mfr.MiningLaser.addPreferredOre(10, <ore:oreKalendrite>);
+
+# 11: BLUE
+<MineFactoryReloaded:item.mfr.laserfocus:11>.addTooltip("Cobolt, Lapis, Osmium");
+mods.mfr.MiningLaser.removePreferredOre(11, <ore:oreMithril>);
+mods.mfr.MiningLaser.addPreferredOre(11, <ore:oreOsmium>);
+
+# 12: BROWN
+<MineFactoryReloaded:item.mfr.laserfocus:12>.addTooltip("Iron, Meutoite, Potash, Shadow Iron");
+mods.mfr.MiningLaser.addPreferredOre(12, <ore:oreMeutoite>);
+mods.mfr.MiningLaser.addPreferredOre(12, <ore:oreShadowIron>);
+mods.mfr.MiningLaser.addPreferredOre(12, <ore:orePotash>);
+
+# 13: Green
+<MineFactoryReloaded:item.mfr.laserfocus:13>.addTooltip("Deep Iron, Orichalcum, Yellorite");
+mods.mfr.MiningLaser.addPreferredOre(13, <ore:oreOrichalcum>);
+mods.mfr.MiningLaser.addPreferredOre(13, <ore:oreDeepIron>);
+mods.mfr.MiningLaser.addPreferredOre(13, <ore:oreYellorite>);
+
+# 14: RED
+<MineFactoryReloaded:item.mfr.laserfocus:14>.addTooltip("Firestone, Redstone, Rubracium");
+mods.mfr.MiningLaser.addPreferredOre(14, <ore:oreRubracium>);
+
+# 15: BLACK
+<MineFactoryReloaded:item.mfr.laserfocus:15>.addTooltip("Bitumen, Coal, Phosphorite");
+mods.mfr.MiningLaser.addPreferredOre(7, <ore:oreBitumen>);
+mods.mfr.MiningLaser.addPreferredOre(7, <ore:orePhosphorite>);

@@ -1,5 +1,11 @@
 # Rampant Pack Changelog
 
+### Version 4.0.5
+
+* **Config Changes:**
+	* MFR Mining Laser Foci changed to balance ores across all 15 foci colors.
+		The ores tied to each foci are listed in the tooltip.
+
 ### Version 4.0.4a
 
 * **Recipe Changes:**
