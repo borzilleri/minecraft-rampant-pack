@@ -1,5 +1,13 @@
 # Rampant Pack Changelog
 
+### Version 4.0.6
+
+* **Mods Updated:**
+	* AppleCore (library)
+	* Botania
+	* INpureCore (library)
+	* Traveller's Gear
+
 ### Version 4.0.5
 
 * **Config Changes:**

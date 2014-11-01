@@ -1,5 +1,5 @@
 package_name: 'rampant-pack'
-version: '4.0.5'
+version: '4.0.6'
 
 packages:
   server:
@@ -20,3 +20,10 @@ packages:
     builder: "technic"
     forge_version: "1.7.10-10.13.2.1230"
     directories: *CLIENT_DIRS
+
+  admin:
+    builder: "vanilla"
+    directories:
+      - common
+      - client
+      - admin
