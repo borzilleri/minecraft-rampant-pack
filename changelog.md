@@ -1,16 +1,14 @@
 # Rampant Pack Changelog
 
-### Version 4.0.6a
+### Version 4.0.6b
 
-* **Mods Updated:**
-	* PrimitiveMobs
-
-### Version 4.0.6
+* **Recipe Changes:**
+	* Fixed Midasium + Astral Silver = Electrum recipe so it works.
 
 * **Mods Updated:**
 	* AppleCore (library)
 	* Botania
-	* INpureCore (library)
+	* PrimitiveMobs
 	* Traveller's Gear
 
 ### Version 4.0.5

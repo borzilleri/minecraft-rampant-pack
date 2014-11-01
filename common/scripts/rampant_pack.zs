@@ -172,8 +172,8 @@ mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:64>, <
 mods.thermalexpansion.Smelter.addRecipe(2400, <ThermalFoundation:material:32>, <Metallurgy:precious.dust>, <Metallurgy:brass.ingot>*2);
 #
 # Electrum = Midasium + Astral Silver
-mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:nether.dust:3>, <Metallurgy:fantasy.dust:5>, <ThermalExpansion:material:71>*2);
-mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:midasium.ingot>, <Metallurgy:astral.silver.ingot>, <ThermalExpansion:material:71>*2);
+mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:nether.dust:3>, <Metallurgy:fantasy.dust:5>, <ThermalFoundation:material:71>*2);
+mods.thermalexpansion.Smelter.addRecipe(2400, <Metallurgy:midasium.ingot>, <Metallurgy:astral.silver.ingot>, <ThermalFoundation:material:71>*2);
 
 
 # Add Fluid Transposer Recipe for Glowstone Ingot
@@ -349,7 +349,7 @@ recipes.addShapeless(<ThermalFoundation:material:42>*4,
 recipes.addShapeless(<ThermalFoundation:material:43>*4,
 	[<ore:dustLemurite>, <ore:dustLemurite>, <ore:dustLemurite>,
 	<ore:dustAstralSilver>, <ThermalFoundation:bucket:1>]);
-	
+
 # Condensed Dragon Essence
 recipes.addShaped(<TabulaRasa:RasaItem0>, [
 	[<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>,<HardcoreEnderExpansion:essence>],
