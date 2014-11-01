@@ -1,5 +1,5 @@
 package_name: 'rampant-pack'
-version: '4.0.6'
+version: '4.0.6a'
 
 packages:
   server:

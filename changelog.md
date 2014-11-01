@@ -1,5 +1,10 @@
 # Rampant Pack Changelog
 
+### Version 4.0.6a
+
+* **Mods Updated:**
+	* PrimitiveMobs
+
 ### Version 4.0.6
 
 * **Mods Updated:**
