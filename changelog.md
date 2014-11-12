@@ -1,5 +1,37 @@
 # Rampant Pack Changelog
 
+### Version 4.0.7
+
+* **Config Changes:**
+	* Tinkers Tools will lose 10% durability on death.
+	* Yellorium should now be processable in mekanism ore processing.
+
+* **Mods Updated:**
+	* Another One Bites The Dust
+	* Artifice
+	* Bibliocraft
+	* Bibliowoods (Natura)
+	* Big Reactors
+	* Blood Magic
+	* Botania
+	* HungerOverhaul
+	* JourneyMap
+	* Mekanism
+	* Natura
+	* NEIAddons
+	* Pam's HarvestCraft
+	* Pneumaticraft
+	* Project Red
+	* Refined Relocation
+	* Tinkers' Construct
+
+* **Mods Added:**
+	* JourneyMapServer
+	* InfiniBows
+
+* **Mods Removed:**
+	* BowInfinityFix
+
 ### Version 4.0.6b
 
 * **Recipe Changes:**
