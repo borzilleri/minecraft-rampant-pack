@@ -1,5 +1,16 @@
 # Rampant Pack Changelog
 
+### Version 4.0.8
+
+* **Mods Updated:**
+	* BiblioCraft
+	* Botania
+	* HardcoreEnderExpansion
+	* JourneyMap
+	* JourneyMapServer
+	* MineTweaker
+	* Railcraft
+
 ### Version 4.0.7
 
 * **Config Changes:**

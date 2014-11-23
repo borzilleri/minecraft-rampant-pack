@@ -1,29 +1,59 @@
 package_name: 'rampant-pack'
-version: '4.0.7a'
+version: '4.0.8'
+
+github: &GITHUB_CONF
+  repo: 'duaiwe/minecraft-rampant-pack'
 
 packages:
   server:
+    name: "Server Package"
     builder: "vanilla"
+    deployers:
+      - ssh
     directories:
       - common
       - server
     host: "nerv.local"
-    dir: "/Volumes/Ryoji/Minecraft/rampant-pack"
+    ssh:
+      host: "nerv.local"
+      dir: "/Volumes/Ryoji/Minecraft/rampant-pack"
 
   vanilla:
+    name: "Vanilla Launcher Package"
     builder: "vanilla"
+    deployers:
+      - copy
+      - ssh
+      - github
     directories: &CLIENT_DIRS
       - common
       - client
+    copy:
+      dir: "~/Dropbox/Minecraft/rampant-io/Rampant Pack"
+    ssh:
+      host: "web.rampant.io"
+      dir: "/srv/www/minecraft/packs"
+    github: *GITHUB_CONF
 
   technic:
+    name: "Technic Launcher Package"
     builder: "technic"
+    deployers:
+      - ssh
     forge_version: "1.7.10-10.13.2.1230"
     directories: *CLIENT_DIRS
+    ssh:
+      host: "web.rampant.io"
+      dir: "/srv/www/minecraft/packs"
 
   admin:
+    name: "Admin Vanilla Package"
     builder: "vanilla"
+    deployers:
+      - copy
     directories:
       - common
       - client
       - admin
+    copy:
+      dir: "~/Dropbox/Minecraft"
