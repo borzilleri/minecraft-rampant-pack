@@ -2,15 +2,18 @@
 
 ### Version 4.0.9
 
-* **Mods UPdated:**
+* **Mods Updated:**
 	* Floating Ruins
 	* Another One Bites The Dust
-	* Artifice
 	* Blood Magic
 	* Botania
 	* Carpenter's Blocks
-	* Mekanism
+	* ForgeMultipart
+	* iChunUtil
+	* JourneyMap
+	* JourneyMapServer
 	* Pneumaticraft
+	* ProjectRed
 
 * **Mods Added:**
 	* MmmMmmMmmMmm
