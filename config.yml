@@ -1,5 +1,5 @@
 package_name: 'rampant-pack'
-version: '4.0.8'
+version: '4.0.9-SNAPSHOT'
 
 github: &GITHUB_CONF
   repo: 'duaiwe/minecraft-rampant-pack'
